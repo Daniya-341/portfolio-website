@@ -1,60 +1,67 @@
 body {
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: Arial;
     background: linear-gradient(135deg, #0f0c29, #1a0f2e, #2b0a3d);
-    color: #eee;
+    color: white;
 }
 
 header {
     text-align: center;
-    padding: 40px 20px;
-}
-
-h1 {
-    color: #ff5ca2;
-    font-size: 40px;
+    padding: 30px;
 }
 
 nav a {
     margin: 10px;
-    color: #ddd;
+    color: white;
     text-decoration: none;
-    font-size: 18px;
 }
 
 section {
-    padding: 40px 20px;
+    padding: 40px;
     text-align: center;
 }
 
 h2 {
     color: #ff5ca2;
-    margin-bottom: 20px;
 }
 
-/* Cards */
+.big {
+    font-size: 50px;
+}
+
+.highlight {
+    color: #ff5ca2;
+    font-size: 22px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .card {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255,255,255,0.05);
     margin: 15px;
     padding: 20px;
-    border-radius: 12px;
-    display: inline-block;
-    width: 280px;
-    vertical-align: top;
-    box-shadow: 0 0 20px rgba(255, 92, 162, 0.2);
+    border-radius: 15px;
+    width: 250px;
+    box-shadow: 0 0 20px rgba(255,92,162,0.3);
 }
 
-/* Button */
+.big-card {
+    width: 80%;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
 button {
     background: #ff5ca2;
     border: none;
     padding: 12px 20px;
     color: white;
     border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-button:hover {
-    background: #ff2f8b;
 }
